@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estadias</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="menu">
+
+        <h1>Estadias</h1>
+
+        <a href="index.html">
+            Ir para Automóveis
+        </a>
+
+    </div>
+
+    <section class="box">
+
+        <h2>Cadastrar Estadia</h2>
+
+        <form id="formEstadia">
+
+            <input type="text" id="automovelPlaca" placeholder="Placa do veículo" required>
+
+            <input type="number" id="valorHora" placeholder="Valor Hora" required>
+
+            <button type="submit">
+                Cadastrar
+            </button>
+
+        </form>
+
+    </section>
+
+    <section class="box">
+
+        <h2>Lista de Estadias</h2>
+
+        <div id="listaEstadias"></div>
+
+    </section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

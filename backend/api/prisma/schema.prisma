@@ -1,0 +1,37 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+}
+
+model Automovel {
+  placa         String   @id  @unique
+  proprietario  String
+  tipo          TIPO
+  modelo        String
+  telefone      String
+  marca         String
+  cor           String?
+  ano           Int?
+  estadias      Estadia[]
+}
+
+model Estadia {
+  id            Int        @id @default(autoincrement())
+  entrada       DateTime   @default(now())
+  saida         DateTime?
+  valorHora     Float
+  valorTotal    Float?
+  automovelPlaca   String
+  automovel     Automovel  @relation(fields: [automovelPlaca], references: [placa])
+}
+
+enum TIPO {
+  carro
+  moto
+  van
+  onibus
+  caminhao
+}

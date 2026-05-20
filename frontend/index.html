@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automóveis</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="menu">
+
+        <h1>Automóveis</h1>
+
+        <a href="estadias.html">
+            Ir para Estadias
+        </a>
+
+    </div>
+
+    <section class="box">
+
+        <h2>Cadastrar Automóvel</h2>
+
+        <form id="formAutomovel">
+
+            <input type="text" id="placa" placeholder="Placa" required>
+
+            <input type="text" id="proprietario" placeholder="Proprietário" required>
+
+            <select id="tipo">
+
+                <option value="carro">Carro</option>
+                <option value="moto">Moto</option>
+                <option value="van">Van</option>
+                <option value="onibus">Ônibus</option>
+                <option value="caminhao">Caminhão</option>
+
+            </select>
+
+            <input type="text" id="modelo" placeholder="Modelo" required>
+
+            <input type="text" id="telefone" placeholder="Telefone" required>
+
+            <input type="text" id="marca" placeholder="Marca" required>
+
+            <input type="text" id="cor" placeholder="Cor">
+
+            <input type="number" id="ano" placeholder="Ano">
+
+            <button type="submit">
+                Cadastrar
+            </button>
+
+        </form>
+
+    </section>
+
+    <section class="box">
+
+        <h2>Lista de Automóveis</h2>
+
+        <div id="listaAutomoveis"></div>
+
+    </section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
